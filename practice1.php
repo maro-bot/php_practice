@@ -1,6 +1,6 @@
 <?php
-$name = YutaAraki;
-if ($name == Araki){
+$name = "YutaAraki";
+if ($name == "YutaAraki"){
     echo "あなたの名前です";
 } else{
     echo "あなたの名前ではありません";
@@ -8,9 +8,11 @@ if ($name == Araki){
 ?>
 
 <?php 
+$result = 0;
 for ($i = 1; $i < 10001; $i++){
-    echo $i;
+    $result += $i;
 }
+echo $result;
 ?>
 
 <?php
