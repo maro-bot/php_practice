@@ -28,13 +28,16 @@ echo "\n";
 
 //4
 function max_array($arr) {
- $max_number = $arr[0];
- foreach($arr as $a) {
-     $result = $a;
- }
-    return $result;
+    $max_number = $arr[0];
+    foreach($arr as $a) {
+        //$max_numberより$aが大きい時$max_numberに$aを代入する
+        if($max_number < $a){
+            $max_number = $a;
+        }
+    }
+    return $max_number;
 }
-$arr = array(1,3,5,7,9);
+$arr = array(1,3,55,7,10,20);
 echo max_array($arr);
 echo "\n";
 
